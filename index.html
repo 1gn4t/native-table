@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <h2>Users Table</h2>
+    <section class="form-wrapper">
+      <form action="" class="form">
+        <fieldset>
+          <legend>Add User</legend>
+
+          <input
+            type="text"
+            placeholder="First Name"
+            id="firstName"
+            name="firstName"
+          />
+          <label for="firstName" class="visually-hidden">First Name </label>
+
+          <input
+            type="text"
+            placeholder="Last Name"
+            id="lastName"
+            name="lastName"
+          />
+          <label for="lastName" class="visually-hidden">Last Name</label>
+
+          <input type="number" placeholder="Age" id="age" name="age" />
+          <label for="age" class="visually-hidden">Age</label>
+        </fieldset>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </section>
+    <section class="table-wrapper">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>
+              First Name
+              <button class="sort-btn" data-sort-by="firstName">
+                <img src="/sort.svg" alt="Сортировка" width="10" />
+              </button>
+            </th>
+            <th>
+              Last Name<button class="sort-btn" data-sort-by="lastName">
+                <img src="/sort.svg" alt="Сортировка" width="10" />
+              </button>
+            </th>
+            <th>
+              Age<button class="sort-btn" data-sort-by="age">
+                <img src="/sort.svg" alt="Сортировка" width="10" />
+              </button>
+            </th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>
